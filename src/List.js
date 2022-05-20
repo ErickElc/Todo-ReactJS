@@ -6,7 +6,10 @@ function List(props){
             {props.items.map(item =>
             <li className="Base" key={item}>{item.text}
             <button onClick={()=>{props.onItemDeleted(item)}}>
-            <img src="./lixo.jpg" alt=""></img></button>
+                <img src="lixeira.jpeg" alt="">
+
+                </img>
+                </button>
             </li>)}
             
         </ul>
