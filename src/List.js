@@ -4,12 +4,10 @@ function List(props){
     return(
         <ul className="ContainerList">
             {props.items.map(item =>
-            <li className="Base" key={item.text}>{item.text}
-            <button onClick={()=>{props.onItemDeleted(item)}}>
-                <img src="lixeira.jpeg" alt="">
-
-                </img>
-                </button>
+            <li className="Base" key={item.id}>{item.text}
+            <i className="gg-trash">
+                <button onClick={()=>{props.onItemDeleted(item)}}id="lixeira"> </button>
+            </i>
             </li>)}
             
         </ul>
