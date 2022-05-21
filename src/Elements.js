@@ -11,7 +11,7 @@ function Elements(){
         setItems([...items, it])
     }
     function onItemDeleted(item){
-        let FiltredItems = items.filter(it =>it.id != item.id);
+        let FiltredItems = items.filter(it =>it.id !== item.id);
         setItems(FiltredItems)
 
     }
