@@ -75,4 +75,5 @@
 #lixeira{
     height: 20px;
     width: 20px;
+    background-image: ("./lixeira.jpeg");
 }
