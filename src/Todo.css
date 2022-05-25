@@ -2,25 +2,28 @@
     font-family: helvetica, Tahoma, sans-serif;
 }
 @import url('https://css.gg/trash.css');
+body{
+    background-color: rgb(94, 92, 92);
+}
 .Container{
     display:flex;
     flex-flow: column wrap;
     align-content: center;
-    background-color: rgb(94, 92, 92);
     height: 110vh;
+    margin-right: 0px;
 
 }
 .Containers{                   
     background-color: rgb(36, 34, 34);
     padding:30px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 .ContainerList{
     background-color: rgb(58, 57, 57);
     min-width: 450px;
-    max-height: 76vh;
+    max-height: 70vh;
     margin-right: 20px;
     list-style: none;
     overflow-y: auto;
@@ -80,13 +83,7 @@
     padding: 8px;
     opacity: 0;
 }
-#imagemm{
-    height: 10px;
-    width: 10px;
-    background-image: url("./lixeira.jpeg");
-    position: absolute;
-    left: 900px;
-}
+
 .gg-trash {
     box-sizing: border-box;
     position: relative;
@@ -129,4 +126,78 @@
     border-top-right-radius: 2px;
     top: -7px;
     left: -2px
+}
+@media (max-width:645px) {
+    .Container{
+        padding: 0px;
+        margin-right: 0px;
+    }
+    .Containers{                   
+        overflow-x: hidden;
+        padding:10px;
+    }
+    .ContainerList{
+        min-width: 106px;
+        word-break: break-word;
+        overflow-x: hidden;
+        margin-right: 23px;
+        margin-left: 23px;
+        max-height: 458px;
+    }
+    .Base{
+        width: 206px;
+        padding:3px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    #input{
+        margin-left: 21px;
+        width: 204px;
+    }
+    #Botao{
+        width: 55px;
+    }
+    #lixeira{
+        position: absolute;
+        top: -7px;
+        left: -7px;
+        padding: 8px;
+        opacity: 0;
+    }
+    .gg-trash {
+        top: -2px;
+        left:218px;
+    }
+}
+@media (max-width:385px){
+    .Container{
+        padding: 0px;
+    }
+    #input{
+        width: 154px;
+    }
+    .Containers{                   
+        padding:10px;
+    }
+    .ContainerList{
+        max-height: 430px;
+    }
+    .Base{
+        width: 154px;
+    }
+    .gg-trash {
+        top: -2px;
+        left:-24px;
+    }
+}
+@media (max-width:315px){
+    #input{
+        width: 128px;
+    }
+    .ContainerList{
+        max-height: 402px;
+    }
+    .Base{
+        width: 128px;
+    }
 }

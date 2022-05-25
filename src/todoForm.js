@@ -19,7 +19,7 @@ function TodoForm(props){
         <div>
             
             <form className="Formulario">
-                <input id="input" className="inputs" type="text" onChange={handleChange} value={text} maxLength="48"></input>
+                <input id="input" className="inputs" type="text" onChange={handleChange} value={text} maxLength="36"></input>
                 <button id="Botao" className="inputs" onClick={addItem}>Add</button>
             </form>
         </div>
